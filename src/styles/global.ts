@@ -5,6 +5,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 350ms;
   }
 
   body {
@@ -12,5 +13,14 @@ export default createGlobalStyle`
     font-size: 14px;
     color: ${props => props.theme.colors.text};
     font-family: sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 05px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: ${props => props.theme.colors.webkit.scrollbar};
+    border-radius: 25px;
   }
 `;

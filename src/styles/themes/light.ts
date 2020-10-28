@@ -8,6 +8,10 @@ export default {
     background: '#F5F5F5',
     text: '#333',
 
+    webkit: {
+      scrollbar: '#7636ff'
+    },
+
     header: {
       menuIcon: '#fff'
     },

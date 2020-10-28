@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 60px;
-  background: ${props => props.theme.colors.primary};
+  width: 100%;
+  height: 100vh;
+  background: ${props => props.theme.colors.background};
   color #FFF;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 30px;
 `;

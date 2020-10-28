@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   background: transparent;
   border-radius: 50%;
@@ -13,10 +13,7 @@ export const Button = styled.button`
   outline: none;
 
   @media screen and (max-width: 600px) {
-    justify-content: flex-start;
-  }
-
-  :active {
+    justify-content: center;
   }
 `;
 
@@ -30,9 +27,12 @@ export const Drawer = styled.div`
   width: 300px;
   height: 100%;
   background-color: ${props => props.theme.colors.drawer.background};
-
-  @media screen and (max-width: 600px) {
-  }
+  
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 `;
 
 export const DrawerBackground = styled.div`

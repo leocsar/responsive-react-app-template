@@ -11,6 +11,10 @@ declare module 'styled-components' {
       background: string;
       text: string;
 
+      webkit: {
+        scrollbar: string;
+      },
+
       header: {
         menuIcon: string;
       },
