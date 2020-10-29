@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import Routes from './routes';
 
 import GlobalStyle from './styles/global';
 import light from './styles/themes/light';
@@ -21,7 +22,7 @@ function App() {
       <div className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
-        <Home />
+        <Routes />
       </div>
     </ThemeProvider>
   );

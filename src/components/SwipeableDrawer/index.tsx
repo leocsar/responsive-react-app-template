@@ -44,7 +44,7 @@ const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
       </Button>
 
       <DrawerBackground
-        style={{ display: drawerStatus ? 'flex' : 'none' }}
+        style={{ width: drawerStatus ? '100%' : 0 }}
         onClick={toggleDrawer}
       />
 
