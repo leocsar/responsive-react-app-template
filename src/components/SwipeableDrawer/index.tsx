@@ -1,4 +1,6 @@
 import React, { useContext, useState } from 'react';
+import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 import { ThemeContext } from 'styled-components';
 import { FiMenu } from 'react-icons/fi';
 
@@ -14,7 +16,7 @@ import {
 interface itemsInterface {
   title: string;
   icon: any;
-  action(): void;
+  route: string;
 }
 
 type items = itemsInterface[];
@@ -57,7 +59,6 @@ const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
           items.map(item => {
             return (
               <DrawerItem
-                onClick={item.action}
                 style={{ display: drawerStatus ? 'flex' : 'none' }}
               >
                 {item.icon}
