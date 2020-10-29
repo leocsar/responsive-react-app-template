@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const Button = styled.button`
   display: flex;
@@ -23,7 +24,8 @@ export const Drawer = styled.div`
   top: 0;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   width: 300px;
   height: 100%;
   background-color: ${props => props.theme.colors.drawer.background};
@@ -46,4 +48,43 @@ export const DrawerBackground = styled.div`
   height: 100%;
   background-color: #000000;
   opacity: 0.5;
+`;
+
+export const DrawerHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  margin 0 0 20px 0;
+  border-style: solid;
+  border-width: 0 0 0.5px 0;
+  border-color: ${shade(0.5, '#f5f5f5')};
+`;
+
+export const DrawerItem = styled.button`
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 14px;
+
+  :hover {
+    background-color: ${props => props.theme.colors.drawer.drawerItemHover};
+  }
+`;
+
+export const DrawerItemText = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: ${props => props.theme.colors.drawer.drawerItemText};
+  margin: 0 0 0 28px;
 `;

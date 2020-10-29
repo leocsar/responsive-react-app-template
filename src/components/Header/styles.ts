@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 60px;
   background: ${props => props.theme.colors.primary};
   color #FFF;
@@ -19,6 +23,7 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-size: 16px;
 
   @media screen and (max-width: 600px) {
     justify-content: flex-start;

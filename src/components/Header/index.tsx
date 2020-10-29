@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import Switch from 'react-switch';
 import { shade } from 'polished';
 import { ThemeContext } from 'styled-components';
-import SwipeableDrawer from '../SwipeableDrawer'
+import { FiSettings } from 'react-icons/fi';
+import SwipeableDrawer from '../SwipeableDrawer';
 
 import { Container, Title } from './styles';
 
@@ -17,6 +18,29 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
     <Container>
       <SwipeableDrawer
         action={() => alert('oeeee')}
+        items={[
+          { 
+            title: 'Opção 1',
+            icon: <FiSettings color={colors.drawer.drawerItemText} size={24} />,
+            action: () => alert('Opção 1')
+          },
+          { 
+            title: 'Opção 2',
+            icon: <FiSettings color={colors.drawer.drawerItemText} size={24} />,
+            action: () => alert('Opção 2')
+           },
+           { 
+             title: 'Opção 3',
+             icon: <FiSettings color={colors.drawer.drawerItemText} size={24} />,
+             action: () => alert('Opção 3')
+            },
+            { 
+              title: 'Opção 4',
+              icon: <FiSettings color={colors.drawer.drawerItemText} size={24} />,
+              action: () => alert('Opção 4')
+             }
+          ]
+        }
       />
       
       <Title>

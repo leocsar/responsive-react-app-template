@@ -21,7 +21,10 @@ export default {
     },
 
     drawer: {
-      background: '#F5F5F5'
+      background: '#F5F5F5',
+      drawerHeader: '#7636ff',
+      drawerItemHover: '#7636ff',
+      drawerItemText: '#333'
     }
   }
 }

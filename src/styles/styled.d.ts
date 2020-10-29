@@ -25,6 +25,9 @@ declare module 'styled-components' {
 
       drawer: {
         background: string;
+        drawerHeader: string;
+        drawerItemHover: string;
+        drawerItemText: string;
       }
     }
   }
