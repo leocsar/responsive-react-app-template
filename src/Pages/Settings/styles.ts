@@ -58,11 +58,12 @@ export const Field = styled.div`
 
 export const Title = styled.label`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 0 20px 0 0;
+  margin: 0 20px 0 20px;
   font-size: 14px;
   color: ${props => props.theme.colors.settings.fieldTitle};
+  width: 100%;
 `;
 
 export const FormTitle = styled.label`

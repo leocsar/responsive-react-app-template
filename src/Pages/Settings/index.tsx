@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import Switch from 'react-switch';
+import { FaMoon } from 'react-icons/fa';
 import { shade } from 'polished';
 import { ThemeContext } from 'styled-components';
 import {
@@ -24,6 +25,7 @@ const Settings: React.FC<Props> = ({ toggleTheme }) => {
         <FormTitle>{'Aparência'}</FormTitle>
 
         <Field>
+          <FaMoon color={colors.settings.fieldTitle} size={30} />
           <Title>{'Tema escuro'}</Title>
           <Switch 
             onChange={toggleTheme}
