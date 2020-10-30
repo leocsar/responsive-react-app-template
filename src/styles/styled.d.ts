@@ -28,6 +28,18 @@ declare module 'styled-components' {
         drawerHeader: string;
         drawerItemHover: string;
         drawerItemText: string;
+      },
+
+      settings: {
+        form: string;
+        formTitle: string;
+        formTitleBackground: string;
+        fieldBorder: string;
+        fieldTitle: string;
+        switchOn: string;
+        switchOff: string;
+        switchHandleOn: string;
+        switchHandleOff: string;
       }
     }
   }

@@ -4,11 +4,15 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import Home from './Pages/Home';
 import Settings from './Pages/Settings';
 
-const Routes = () => {
+interface Props {
+  toggleTheme(): void;
+}
+
+const Routes: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <BrowserRouter>
       <Route component={Home} path="/" exact />
-      <Route component={Settings} path="/settings" exact />
+      <Route render={props => <Settings toggleTheme={toggleTheme}/>} path="/settings" exact />
     </BrowserRouter>
   );
 };

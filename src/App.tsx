@@ -8,7 +8,6 @@ import dark from './styles/themes/dark';
 
 import usePersistedState from './utils/usePersistedState';
 import Header from './components/Header';
-import Home from './Pages/Home';
 
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
@@ -22,7 +21,7 @@ function App() {
       <div className="App">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
-        <Routes />
+        <Routes toggleTheme={toggleTheme} />
       </div>
     </ThemeProvider>
   );

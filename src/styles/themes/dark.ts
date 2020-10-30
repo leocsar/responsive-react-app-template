@@ -25,6 +25,18 @@ export default {
       drawerHeader: '#7636ff',
       drawerItemHover: '#7636ff',
       drawerItemText: '#f5f5f5'
+    },
+
+    settings: {
+      form: '#333',
+      formTitle: '#f5f5f5',
+      formTitleBackground: '#7636ff',
+      fieldBorder: '#f5f5f599',
+      fieldTitle: '#f5f5f5',
+      switchOn: '#7636ff',
+      switchOff: '#7636ff',
+      switchHandleOn: '#f5f5f5',
+      switchHandleOff: '#f5f5f5'
     }
   }
 }

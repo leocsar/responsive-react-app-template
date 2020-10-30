@@ -74,7 +74,7 @@ export const DrawerItem = styled.button`
   outline: none;
   border: none;
   padding: 14px;
-
+  
   :hover {
     background-color: ${props => props.theme.colors.drawer.drawerItemHover};
   }
