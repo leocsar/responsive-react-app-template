@@ -61,12 +61,18 @@ const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
         {
           items.map(item => {
             return (
-              <DrawerItem
-                style={{ display: drawerStatus ? 'flex' : 'none' }}
+              <Link
+                to={`/${item.route}`}
+                onClick={toggleDrawer}
+                style={{ width: '100%', textDecoration: 'none' }}
               >
-                {item.icon}
-                <DrawerItemText>{item.title}</DrawerItemText>
-              </DrawerItem>
+                <DrawerItem
+                  style={{ display: drawerStatus ? 'flex' : 'none' }}
+                >
+                  {item.icon}
+                  <DrawerItemText>{item.title}</DrawerItemText>
+                </DrawerItem>
+              </Link>
             )
           })
         }

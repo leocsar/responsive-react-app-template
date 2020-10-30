@@ -1,5 +1,6 @@
 import React from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
 
 import GlobalStyle from './styles/global';
@@ -20,8 +21,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle />
-        <Header />
-        <Routes toggleTheme={toggleTheme} />
+        <BrowserRouter>
+          <Header />
+          <Routes toggleTheme={toggleTheme} />
+        </BrowserRouter>
       </div>
     </ThemeProvider>
   );

@@ -10,10 +10,10 @@ interface Props {
 
 const Routes: React.FC<Props> = ({ toggleTheme }) => {
   return (
-    <BrowserRouter>
+    <>
       <Route component={Home} path="/" exact />
       <Route render={props => <Settings toggleTheme={toggleTheme}/>} path="/settings" exact />
-    </BrowserRouter>
+    </>
   );
 };
 
