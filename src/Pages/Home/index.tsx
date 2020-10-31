@@ -7,9 +7,6 @@ import { Container } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
-      <Link to='/settings'>
-        {'Configurações'}
-      </Link>
     </Container>
   );
 };

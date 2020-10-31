@@ -10,3 +10,14 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 30px;
 `;
+
+export const Illustration = styled.img`
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+`;

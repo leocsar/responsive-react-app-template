@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       />
       
       <Title>
-        COTe - Painel de controle
+        Nome da sua aplicação
       </Title>
     </Container>
   );
