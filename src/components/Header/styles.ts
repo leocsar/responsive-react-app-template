@@ -2,16 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: fixed;
+
+  height: 3.5rem;
+
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
-  background: ${props => props.theme.colors.primary};
-  color #FFF;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px 0 9px;
+  
+  background-color: ${props => props.theme.colors.primary};
+  color: #FFF;
+
+  padding: 0 2rem 0 .5rem;
 
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -20,7 +25,7 @@ export const Container = styled.div`
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   
   @media screen and (max-width: 600px) {
-    padding: 0 16px 0 0;
+    padding: 0 1rem 0 0;
   }
 `;
 
@@ -29,7 +34,7 @@ export const Title = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 16px;
+  font-size: 1rem;
 
   @media screen and (max-width: 600px) {
     justify-content: flex-start;

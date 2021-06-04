@@ -17,31 +17,31 @@ interface itemsInterface {
   title: string;
   icon: any;
   route: string;
-}
+};
 
 type items = itemsInterface[];
 
 interface Props {
   action(): void;
   items: items;
-}
+};
 
 const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
-  const { colors, title } = useContext(ThemeContext);
-  const [drawerStatus, setDrawerStatus] = useState(false);
+  const { colors, title } = useContext( ThemeContext );
+  const [drawerStatus, setDrawerStatus] = useState( false );
 
-  function toggleDrawer() {
-    setDrawerStatus(lastStatus => !lastStatus);
-  }
+  const toggleDrawer = () => {
+    setDrawerStatus( lastStatus => !lastStatus );
+  };
 
   return (
     <>
       <Button
-        onClick={toggleDrawer}
+        onClick={ toggleDrawer }
       >
         <FiMenu
-          size={24}
-          color={colors.header.menuIcon}
+          size={ 24 }
+          color={ colors.header.menuIcon }
         />
       </Button>
 
@@ -50,7 +50,7 @@ const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
           height: drawerStatus ? '100%' : 0,
           opacity: drawerStatus ? 0.5 : 0
         }}
-        onClick={toggleDrawer}
+        onClick={ toggleDrawer }
       />
 
       <Drawer
@@ -62,15 +62,15 @@ const SwipeableDrawer: React.FC<Props> = ({ action, items }) => {
           items.map(item => {
             return (
               <Link
-                to={`/${item.route}`}
-                onClick={toggleDrawer}
+                to={ `/${item.route}` }
+                onClick={ toggleDrawer }
                 style={{ width: '100%', textDecoration: 'none' }}
               >
                 <DrawerItem
                   style={{ display: drawerStatus ? 'flex' : 'none' }}
                 >
-                  {item.icon}
-                  <DrawerItemText>{item.title}</DrawerItemText>
+                  { item.icon }
+                  <DrawerItemText>{ item.title }</DrawerItemText>
                 </DrawerItem>
               </Link>
             )

@@ -1,12 +1,12 @@
-import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Route, BrowserRouter, RouteProps } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Settings from './Pages/Settings';
 
 interface Props {
   toggleTheme(): void;
-}
+};
 
 const Routes: React.FC<Props> = ({ toggleTheme }) => {
   return (
