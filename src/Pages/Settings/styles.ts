@@ -20,13 +20,14 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.div`
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   border-radius: .25rem;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0 1.5rem 1.5rem 0;
   
   background-color: ${props => props.theme.colors.settings.form};
@@ -79,7 +80,7 @@ export const Title = styled.label`
 `;
 
 export const FormTitle = styled.label`
-  width: calc(100% + 2.5rem);
+  width: calc(100% + 2rem);
   height: 2rem;
   
   display: flex;
@@ -87,7 +88,7 @@ export const FormTitle = styled.label`
   align-items: center;
   
   border-radius: .25rem .25rem 0 0;
-  margin: -1.25rem -1.25rem 10px -1.25rem;
+  margin: -1.5rem -1.5rem 10px -1.5rem;
   
   background-color: ${props => props.theme.colors.settings.formTitleBackground};
   color: ${props => props.theme.colors.settings.formTitle};

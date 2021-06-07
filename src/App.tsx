@@ -10,7 +10,7 @@ import dark from './styles/themes/dark';
 import usePersistedState from './utils/usePersistedState';
 import Header from './components/Header';
 
-function App() {
+const App = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
 
   const toggleTheme = () => {

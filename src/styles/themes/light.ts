@@ -6,14 +6,14 @@ export default {
     secondary: '#D63AF9',
 
     background: '#F5F5F5',
-    text: '#333',
+    text: '#222',
 
     webkit: {
       scrollbar: '#7636ff'
     },
 
     header: {
-      menuIcon: '#fff'
+      menuIcon: '#F5F5F5'
     },
 
     switches: {

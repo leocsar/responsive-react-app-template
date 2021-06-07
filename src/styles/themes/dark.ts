@@ -2,18 +2,18 @@ export default {
   title: 'dark',
 
   colors: {
-    primary: '#333',
+    primary: '#222',
     secondary: '#C62E65',
 
-    background: '#222',
-    text: '#fff',
+    background: '#111',
+    text: '#f5f5f5',
 
     webkit: {
       scrollbar: '#7636ff'
     },
 
     header: {
-      menuIcon: '#fff'
+      menuIcon: '#f5f5f5'
     },
 
     switches: {
@@ -21,14 +21,14 @@ export default {
     },
 
     drawer: {
-      background: '#222',
+      background: '#111',
       drawerHeader: '#7636ff',
       drawerItemHover: '#7636ff',
       drawerItemText: '#f5f5f5'
     },
 
     settings: {
-      form: '#333',
+      form: '#222',
       formTitle: '#f5f5f5',
       formTitleBackground: '#7636ff',
       fieldBorder: '#f5f5f599',

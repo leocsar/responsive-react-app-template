@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import Switch from 'react-switch';
 import { shade } from 'polished';
 import { ThemeContext } from 'styled-components';
-import { FiSettings } from 'react-icons/fi';
+import { FiSettings, FiHome } from 'react-icons/fi';
 
 import SwipeableDrawer from '../SwipeableDrawer';
 import { Container, Title } from './styles';
 
 const Header: React.FC = () => {
-  const { colors, title } = useContext(ThemeContext);
+  const { colors, title } = useContext( ThemeContext );
 
   return (
     <Container>
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         items={[
           { 
             title: 'Página inicial',
-            icon: <FiSettings color={colors.drawer.drawerItemText} size={24} />,
+            icon: <FiHome color={colors.drawer.drawerItemText} size={24} />,
             route: ''
           },
           { 

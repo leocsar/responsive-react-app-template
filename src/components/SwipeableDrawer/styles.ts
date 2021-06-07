@@ -83,7 +83,7 @@ export const DrawerItem = styled.button`
   cursor: pointer;
 
   width: 100%;
-  height: 50px;
+  height: 3rem;
   
   display: flex;
   justify-content: flex-start;
@@ -108,7 +108,7 @@ export const DrawerItemText = styled.span`
   justify-content: center;
   align-items: center;
   
-  margin: 0 0 0 1.5rem;
+  margin: 0 0 0 1rem;
   
   color: ${props => props.theme.colors.drawer.drawerItemText};
 `;
