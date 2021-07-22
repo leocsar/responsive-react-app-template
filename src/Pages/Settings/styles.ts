@@ -8,14 +8,14 @@ export const Container = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
 
-  padding: 6rem 2rem 0;
+  padding: 5rem 2rem 0;
   
   background-color: ${props => props.theme.colors.background};
   
   @media screen and (max-width: 600px) {
     flex-direction: column;
     flex-wrap: unset;
-    padding: 6rem 1.5rem 0;
+    padding: 5rem 1rem 0;
   }
 `;
 
