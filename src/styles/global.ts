@@ -8,9 +8,10 @@ export default createGlobalStyle`
     transition: 350ms;
   }
 
+  html,
   body {
     background: ${props => props.theme.colors.background};
-    font-size: 1rem;
+    font-size: clamp(16px, 2vw, 16px);
     color: ${props => props.theme.colors.text};
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;

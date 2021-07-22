@@ -38,11 +38,11 @@ export const Drawer = styled.div`
   
   background-color: ${props => props.theme.colors.drawer.background};
   
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19), 0 .375rem .375rem rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19), 0 .375rem .375rem rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19), 0 .375rem .375rem rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19), 0 .375rem .375rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, 0.19), 0 .375rem .375rem rgba(0, 0, 0, 0.23);
 `;
 
 export const DrawerBackground = styled.div`
@@ -73,7 +73,7 @@ export const DrawerHeader = styled.div`
   margin: 0 0 1.5rem 0;
   
   border-style: solid;
-  border-width: 0 0 0.5px 0;
+  border-width: 0 0 .031rem 0;
   border-color: ${shade(0.5, '#f5f5f5')};
   
   background-color: transparent;

@@ -32,11 +32,11 @@ export const Form = styled.div`
   
   background-color: ${props => props.theme.colors.settings.form};
 
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
 
   @media screen and (max-width: 600px) {
     width: 100%;
@@ -57,7 +57,7 @@ export const Field = styled.div`
   padding: 1.5rem 0;
   
   border-style: solid;
-  border-width: 0 0 0.5px 0;
+  border-width: 0 0 .031rem 0;
   border-color: ${props => props.theme.colors.settings.fieldBorder};
 
   @media screen and (max-width: 600px) {
@@ -88,7 +88,7 @@ export const FormTitle = styled.label`
   align-items: center;
   
   border-radius: .25rem .25rem 0 0;
-  margin: -1.5rem -1.5rem 10px -1.5rem;
+  margin: -1.5rem -1.5rem .625rem -1.5rem;
   
   background-color: ${props => props.theme.colors.settings.formTitleBackground};
   color: ${props => props.theme.colors.settings.formTitle};

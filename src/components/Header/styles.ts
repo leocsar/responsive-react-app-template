@@ -18,11 +18,11 @@ export const Container = styled.div`
 
   padding: 0 2rem 0 .5rem;
 
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -o-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
+  box-shadow: 0 .188rem .375rem rgba(0, 0, 0, 0.16), 0 .188rem .375rem rgba(0, 0, 0, 0.23);
   
   @media screen and (max-width: 600px) {
     padding: 0 1rem 0 0;
