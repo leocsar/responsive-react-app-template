@@ -30,7 +30,7 @@ const Settings: React.FC<Props> = ({ toggleTheme }) => {
           <Title>{'Tema escuro'}</Title>
           <Switch 
             onChange={toggleTheme}
-            checked={title == 'dark'}
+            checked={title === 'dark'}
             checkedIcon={false}
             uncheckedIcon={false}
             height={10}
