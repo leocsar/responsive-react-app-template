@@ -1,4 +1,4 @@
-export default {
+const dark = {
   title: 'dark',
 
   colors: {
@@ -38,5 +38,29 @@ export default {
       switchHandleOn: '#f5f5f5',
       switchHandleOff: '#f5f5f5'
     }
+  },
+
+  newPallete: {
+    primary: {
+      default: "#7636ff",
+      light: "#af67ff",
+      dark: "#3400ca",
+  
+      elements: {
+        text: "#ffffff"
+      }
+    },
+    
+    secondary: {
+      default: "#222222",
+      light: "#494949",
+      dark: "#000000",
+  
+      elements: {
+        text: "#ffffff"
+      }
+    }
   }
 }
+
+export default dark;
